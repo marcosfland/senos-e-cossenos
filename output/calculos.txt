@@ -1,0 +1,4 @@
+Lei dos Senos:
+a = 45.00, A = 38.00 graus
+b = 87.00, B = 45.00 graus
+c calculado = 72.55, C calculado = 97.00 graus

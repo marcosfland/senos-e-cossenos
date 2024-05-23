@@ -30,6 +30,11 @@ void calcularLeiDosSenos(FILE *file) {
     fprintf(file, "a = %.2lf, A = %.2lf graus\n", a, A);
     fprintf(file, "b = %.2lf, B = %.2lf graus\n", b, B);
     fprintf(file, "c calculado = %.2lf, C calculado = %.2lf graus\n", c, C);
+
+    printf("Lei dos Senos:\n");
+    printf("a = %.2lf, A = %.2lf graus\n", a, A);
+    printf("b = %.2lf, B = %.2lf graus\n", b, B);
+    printf("c calculado = %.2lf, C calculado = %.2lf graus\n", c, C);
 }
 
 void calcularLeiDosCossenos(FILE *file) {
@@ -48,10 +53,15 @@ void calcularLeiDosCossenos(FILE *file) {
     fprintf(file, "a = %.2lf, b = %.2lf\n", a, b);
     fprintf(file, "C = %.2lf graus\n", C);
     fprintf(file, "c calculado = %.2lf\n", c);
+
+    printf("Lei dos Cossenos:\n");
+    printf("a = %.2lf, b = %.2lf\n", a, b);
+    printf("C = %.2lf graus\n", C);
+    printf("c calculado = %.2lf\n", c);
 }
 
 int main() {
-    FILE *file = fopen("calculos.txt", "w");
+    FILE *file = fopen("calculos.txt", "a");
     if (file == NULL) {
         printf("Erro ao abrir o arquivo!\n");
         return 1;
